@@ -113,7 +113,7 @@ void Tictactoe::processClick(int x, int y) {
     move(clickedRow, clickedCol);
 }
 
-void Tictactoe::undo() {
+void Tictactoe::undo() { //hàm return về 1 ô trước đó
     if (moveHistory.empty()) return;
 
     auto lastMove = moveHistory.top();
