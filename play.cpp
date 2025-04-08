@@ -24,9 +24,23 @@ void runGame(){
 
     while (run) {
         while(SDL_PollEvent(&event)){
+
+            //click vào X thì thoát game
             if(event.type == SDL_QUIT){
                 run = false;
             }
+
+            //bấm nút esc thì sẽ thoát game
+            if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE) {
+                run = false;
+            }
+
+            // bấm r để reset bàn cờ ngay lập tức
+            if (event.key.keysym.sym == SDLK_r) {
+                game.init();  // Reset bàn cờ
+                graphics.render(game);
+            }
+
             if(event.type == SDL_MOUSEBUTTONDOWN && event.button.button == SDL_BUTTON_LEFT){
                 SDL_GetMouseState(&x, &y);
                 game.processClick(x, y);

@@ -1,0 +1,67 @@
+# depslib dependency file v1.0
+1744124101 source:c:\gamesdl2\endgame.cpp
+	"EndGame.h"
+
+1744124176 c:\gamesdl2\endgame.h
+	"graphics.h"
+
+1744091427 c:\gamesdl2\graphics.h
+	<SDL.h>
+	<SDL_image.h>
+	"const.h"
+	"logic.h"
+
+1744091022 c:\gamesdl2\const.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_ttf.h>
+
+1744122190 c:\gamesdl2\logic.h
+	"const.h"
+
+1744091427 source:c:\gamesdl2\graphics.cpp
+	"graphics.h"
+
+1744122184 source:c:\gamesdl2\logic.cpp
+	<iostream>
+	"logic.h"
+	"const.h"
+	"graphics.h"
+
+1744122886 source:c:\gamesdl2\main.cpp
+	"graphics.h"
+	"const.h"
+	"logic.h"
+	"music.h"
+	"play.h"
+	"OpenGame.h"
+	"EndGame.h"
+
+1744091425 c:\gamesdl2\music.h
+	<SDL_mixer.h>
+	"graphics.h"
+
+1744119620 c:\gamesdl2\play.h
+
+1744091423 c:\gamesdl2\opengame.h
+	"graphics.h"
+
+1744121857 source:c:\gamesdl2\music.cpp
+	<iostream>
+	"music.h"
+	"logic.h"
+
+1744091424 source:c:\gamesdl2\opengame.cpp
+	"OpenGame.h"
+
+1744124140 source:c:\gamesdl2\play.cpp
+	<iostream>
+	"logic.h"
+	"graphics.h"
+	"music.h"
+	"play.h"
+	"EndGame.h"
+
+1744121857 c:\gamesdl2\reset.h
+

@@ -92,4 +92,3 @@ void Endgame(SDL_Event e, bool& run, int winner) {
     TTF_CloseFont(font);
 }
 
-

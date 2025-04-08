@@ -16,5 +16,8 @@ int main(int argc, char* argv[]) {
         runGame();
     }
 
+    SDL_Quit();
+    TTF_Quit();
+
     return 0;
 }

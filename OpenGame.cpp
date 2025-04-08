@@ -20,24 +20,22 @@ void Opengame(SDL_Event e, bool& run) {
         80
     };
 
-    bool on_start_button = false;   // Biến để kiểm tra có hover chuột không
+    bool on_start_button = false;
     int x, y;
     bool out = false, mouse_down = false;
 
-    // Vòng lặp để hiển thị màn hình chờ tới khi người dùng click nút Start
     while (!out) {
         mouse_down = false;
 
         // Xoá renderer trước khi vẽ lại
         SDL_RenderClear(renderer);
 
-        // Lấy vị trí chuột
         SDL_GetMouseState(&x, &y);
 
         // Xử lý các sự kiện (quit, click)
         while (SDL_PollEvent(&e)) {
             if (e.type == SDL_QUIT) {
-                run = false;   // Nếu thoát, dừng chương trình
+                run = false;
                 return;
             }
             if (e.type == SDL_MOUSEBUTTONDOWN) {
@@ -59,7 +57,6 @@ void Opengame(SDL_Event e, bool& run) {
             on_start_button = false;
         }
 
-        // Nếu đang hover và click => out = true để thoát
         if (on_start_button && mouse_down) {
             out = true;   // đánh dấu thoát
         }

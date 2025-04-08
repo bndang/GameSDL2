@@ -31,6 +31,8 @@ public:
     bool isGameOver();
 
     void processClick(int x, int y);
+
+    void reset();
 };
 
 #endif // _LOGIC__H
