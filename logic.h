@@ -2,12 +2,14 @@
 #define _LOGIC__H
 
 #include "const.h"
+#include <stack>
 
 class Tictactoe {
 private:
     bool running = true;
     char nextMove = O_CELL;    // cho bước đầu tiên là o
     int winner = -1; // chưa end (-1), hòa (0), x thắng (1), o thắng (2)
+    std::stack<std::pair<int, int>> moveHistory;
 
 public:
     char board[BOARD_SIZE_HEIGHT][BOARD_SIZE_WIDTH];
@@ -31,6 +33,8 @@ public:
     bool isGameOver();
 
     void processClick(int x, int y);
+
+    void undo();
 };
 
 #endif // _LOGIC__H

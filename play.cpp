@@ -27,17 +27,26 @@ void runGame(){
 
             //click vào X thì thoát game
             if(event.type == SDL_QUIT){
+                std::cout <<"EXIT\n";
                 run = false;
             }
 
             //bấm nút esc thì sẽ thoát game
             if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE) {
+                std::cout<<"EXIT\n";
                 run = false;
             }
 
             // bấm r để reset bàn cờ ngay lập tức
             if (event.key.keysym.sym == SDLK_r) {
+                std::cout<<"RESET BOARD \n";
                 game.init();  // Reset bàn cờ
+                graphics.render(game);
+            }
+
+            // bấm z để quay lại 1 bước
+            if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_z) {
+                game.undo();
                 graphics.render(game);
             }
 

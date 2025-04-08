@@ -17,19 +17,20 @@
 	<SDL_image.h>
 	<SDL_ttf.h>
 
-1744122190 c:\gamesdl2\logic.h
+1744126209 c:\gamesdl2\logic.h
 	"const.h"
+	<stack>
 
 1744091427 source:c:\gamesdl2\graphics.cpp
 	"graphics.h"
 
-1744122184 source:c:\gamesdl2\logic.cpp
+1744126495 source:c:\gamesdl2\logic.cpp
 	<iostream>
 	"logic.h"
 	"const.h"
 	"graphics.h"
 
-1744122886 source:c:\gamesdl2\main.cpp
+1744125236 source:c:\gamesdl2\main.cpp
 	"graphics.h"
 	"const.h"
 	"logic.h"
@@ -52,10 +53,10 @@
 	"music.h"
 	"logic.h"
 
-1744091424 source:c:\gamesdl2\opengame.cpp
+1744125241 source:c:\gamesdl2\opengame.cpp
 	"OpenGame.h"
 
-1744124140 source:c:\gamesdl2\play.cpp
+1744126564 source:c:\gamesdl2\play.cpp
 	<iostream>
 	"logic.h"
 	"graphics.h"

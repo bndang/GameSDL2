@@ -77,6 +77,7 @@ void Tictactoe::move(int row, int column) {
         if (!checkMove(row, column)) return;
 
         board[row][column] = nextMove;
+        moveHistory.push({row, column}); // lưu bước đi
 
         if (checkLine(row, column)) {
             std::cout << (nextMove == O_CELL ? "O" : "X") << " wins!\n";
@@ -112,6 +113,18 @@ void Tictactoe::processClick(int x, int y) {
     move(clickedRow, clickedCol);
 }
 
+void Tictactoe::undo() {
+    if (moveHistory.empty()) return;
+
+    auto lastMove = moveHistory.top();
+    moveHistory.pop();
+
+    board[lastMove.first][lastMove.second] = EMPTY_CELL;
+
+    // Đổi lượt lại
+    nextMove = (nextMove == O_CELL) ? X_CELL : O_CELL;
+    std::cout<<(nextMove == O_CELL ? "O" : "X") << " RETURN 1 STEP\n";
+}
 
 
 
