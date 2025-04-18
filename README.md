@@ -1,4 +1,4 @@
-# Tictactoe
+# Game Tic-Tac-Toe
 # Giới thiệu
 Đây là game cờ caro 20x20 được cải tiến.
 # Cách tải game
