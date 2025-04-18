@@ -18,3 +18,4 @@ Kết thúc trò chơi:
 - Bấm Exit để thoát game.
 
 # Hình ảnh game:
+![Giao diện bắt đầu game](https://github.com/bndang/GameSDL2/blob/main/startGame.png?raw=true)
